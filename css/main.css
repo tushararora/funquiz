@@ -1,0 +1,220 @@
+body{margin:0;background:url(../img/b.jpg);background-size:cover;}
+header{
+	background: rgba(0, 0, 0, 0.7);
+    height: 80px;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    opacity: .8;
+
+}
+#maintitle
+{
+	font-family:  cursive;
+	color: #FFF;
+	padding-top: 18px;
+}
+.tabs{
+	font-family: cursive;
+	height:40px;
+	font-size: 20px;
+	color: white;
+	
+	text-align: center;
+	padding-top: 10px;
+	opacity: 0.95;
+	border-radius: 10px;
+	
+
+	
+}
+section[data-title="play"]{
+	background-color: #75C202;
+	margin-top: 20%;
+	margin-left: 20%;
+	width: 60%;
+
+}
+section[data-title="instructions"]{
+
+	background-color: #F59F03;
+	margin-top: 10%;
+	margin-left: 20%;
+	width: 60%;
+	
+}
+section[data-title="highscore"]{
+
+	background-color: #F11B03;
+	margin-top: 10%;
+	margin-left: 20%;
+	width: 60%;
+}
+#homepage section{transition: all 2s ease-out 0s;-moz-transition: all 2s ease-out 0s;}
+#select{
+	background: #69D55F;
+    height: 40px;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    color: #FFF;
+    font-family: cursive;
+    border-radius: 10px;
+    margin-left: 10%;
+	width: 80%;
+	margin-top: 5px;
+	
+}
+.selectpage{
+	text-align:center;
+	font-size: 20px;
+	color: #FFF;
+	font-family: cursive;
+	margin-top: 10%;
+	opacity: .9;
+	
+	
+}
+.levelpage{
+	padding-top:13px;
+	padding-bottom: 7px;
+	font-size: 20px;
+	margin-left: 25%;
+	width: 50%;
+}
+#level1{
+	height: 30px;
+	background: #00AAB5;
+	border-radius: 10px;
+
+}
+#level2{
+	height: 30px;
+	background:  #FF590D;
+	margin-top: 10%;
+	border-radius: 10px;
+}
+#level3{
+	height: 30px;
+	background:#A70101;
+	margin-top: 10%;
+	border-radius: 10px;
+}
+#statementlevel1, #statementlevel2, #statementlevel3{
+	height: 30px;
+	color: #FFF;
+	font-family: Verdana;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+}
+div [data-level="level1"]
+{
+	width: 25%;
+	margin-left: 20%;
+	display:inline-block;
+	margin-top: 65px;
+	text-align: center;
+	color: #FFF;
+	height: 35px;
+	padding-top: 8px;
+	font-family: cursive;
+	border-radius: 10px;
+}
+
+#true1{
+	
+	background: #337EA3;
+}
+#false1{
+	background: #7FAE0E;
+	margin-left: 30px;
+}
+#skip1{
+	height: 35px;
+	background: #F7941D;
+	width: 25%;
+	margin-left: 37%;
+	margin-top: 25px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	font-family: cursive;
+	border-radius: 10px;
+}
+div [data-score="scoreit"]{
+	display: inline-block;
+	margin-top: 8%;
+	font-family: cursive;
+	font-size: 20px;
+	height: 30px;
+	text-align: center;
+}
+#score1, #score2, #score3{
+	color: #FFF;
+	margin-left: 33%;
+	height: 30px;
+	border-radius: 60px;
+	background-color: #DC011E;
+	width: 20%;
+
+
+}
+#scorelevel1, #scorelevel2, #scorelevel3{
+	color: #FFF;
+	margin-left: 3%;
+	background-color: #DC011E;
+	border-radius: 60px;
+	width: 40%;
+}
+.finalpage1, .finalpage2, .finalpage3{
+	color: white;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	margin-top: 18%;
+	font-family: cursive;
+}
+#playagain1, #playagain2, #playagain3{
+	background-color:  #0168A5;
+	margin-left: 25%;
+	width: 50%;
+	border-radius: 40px;
+	padding-top: 4%;
+}
+#nextlevel1, #nextlevel2, #nextlevel3{
+	color: white;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 12%;
+	font-family: cursive;
+	background-color: #D9183B;
+	margin-left: 14%;
+	width: 70%;
+	border-radius: 80px;
+	padding-top: 5%;
+}
+#instructions{
+
+	border-radius: 5px;
+	height: 320px;
+	color: white;
+	font-family: cursive;
+	font-size: 16px;
+	background-color: #00933B;
+}
+#instructionclose{
+
+	border-radius: 3px;
+	height: 35px;
+	color: white;
+	font-family: cursive;
+	font-size: 16px;
+	background-color: #ED1638;
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+	padding-top: 6px;
+}

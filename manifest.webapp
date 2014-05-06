@@ -1,0 +1,13 @@
+{
+  "name": "Quiz Mania",
+  "description": "A fun true/false quiz application to enhance your G.K.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "../img/quiz.png"
+  },
+  "developer": {
+    "name": "Tushar",
+    "url": "http://www.facebook.com/tushar.arora.777"
+  },
+  "default_locale": "en"
+}

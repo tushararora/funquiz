@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz Mania</title>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/main.js"></script>
+		<link href="css/main.css" rel="stylesheet"></link>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header>
+			<div id="maintitle">Quiz Mania</div>
+		</header>
+		<div id="select" class="selectpage"></div>
+		<div data-role="page" id="homepage">
+		<section data-title="play" class="tabs" onclick="playclick()">Play</section>
+		<section data-title="instructions" class="tabs">Instructions</section>
+		<section data-title="highscore" class="tabs">High Score</section>
+		</div>
+		<div id="instructions">
+		<section id="instructiontext"><p><b>Quiz Mania</b> is a true/false quiz application.<br><strong>How to play?</strong><br>1. Select level<br>2. Based on your G.K. state the facts, whether they are true or false<br>3. For every "Correct" answer 2 points will be awarded<br>4. For every "Wrong" answer 1 point will be deducted<br>5. You can also skip the statement by using skip button<br></p></section>
+		<section id="instructionclose">Close</section>
+		</div>
+	    <div id="levels" class="selectpage">
+	    	<section  id="level1" class="levelpage" onclick="levelclick('level1')">
+	    		<div>Level 1</div>
+	    	</section>
+	    	<section id="level2" class="levelpage" onclick="levelclick('level2')">
+	    		<div>Level 2</div>
+	    	</section>
+	    	<section id="level3" class="levelpage" onclick="levelclick('level3')">
+	    		<div>Level 3</div>
+	    	</section>
+	    </div> 
+	    <div id="questionslevel1">
+	    <div class='showlevel1' id="statementlevel1">New Delhi is the Capital of India</div>
+	    <div class='showlevel1' id="true1"  data-level="level1"onclick="level1click('true')">True</div>
+	    <div class='showlevel1' id="false1" data-level="level1"onclick="level1click('false')">False</div>
+	    <div class='showlevel1' id="skip1"  onclick="level1click('skip')">Skip</div>
+	    <div class='showlevel1' data-score="scoreit" id="scorelevel1">Score</div>
+	    <div class='showlevel1' data-score="scoreit" id="score1">0</div>
+	    <div class='finalpage1' id='showscore1'></div>
+	    <div class='finalpage1' id='playagain1' onclick="playagain1()">Play again</div>
+	    <div id='nextlevel1' onclick="levelclick('level2')">Go to Next Level</div>
+		</div>
+		<div id="questionslevel2">
+	    <div class='showlevel2' id="statementlevel2">Geneva is the headquarters of World Trade Organization</div>
+	    <div class='showlevel2' id="true1"  data-level="level1"onclick="level2click('true')">True</div>
+	    <div class='showlevel2' id="false1" data-level="level1"onclick="level2click('false')">False</div>
+	    <div class='showlevel2' id="skip1"  onclick="level2click('skip')">Skip</div>
+	    <div class='showlevel2' data-score="scoreit" id="scorelevel2">Score</div>
+	    <div class='showlevel2' data-score="scoreit" id="score2">0</div>
+	    <div class='finalpage2' id='showscore2'></div>
+	    <div class='finalpage2' id='playagain2' onclick="playagain2()">Play again</div>
+	    <div id='nextlevel2' onclick="levelclick('level3')">Go to Next Level</div>
+		</div>
+		<div id="questionslevel3">
+	    <div class='showlevel3' id="statementlevel3">Won is the currency of North Korea</div>
+	    <div class='showlevel3' id="true1"  data-level="level1"onclick="level3click('true')">True</div>
+	    <div class='showlevel3' id="false1" data-level="level1"onclick="level3click('false')">False</div>
+	    <div class='showlevel3' id="skip1"  onclick="level3click('skip')">Skip</div>
+	    <div class='showlevel3' data-score="scoreit" id="scorelevel3">Score</div>
+	    <div class='showlevel3' data-score="scoreit" id="score3">0</div>
+	    <div class='finalpage3' id='showscore3'></div>
+	    <div class='finalpage3' id='playagain3' onclick="playagain3()">Play again</div>
+	    <div id='nextlevel3' onclick="levelclick('level3')">Go to Next Level</div>
+		</div>
+
+	</body>
+</html>
