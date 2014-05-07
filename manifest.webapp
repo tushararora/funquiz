@@ -3,7 +3,7 @@
   "description": "A fun true/false quiz application to enhance your G.K.",
   "launch_path": "/index.html",
   "icons": {
-    "128": "../img/quiz.png"
+    "128": "/img/quiz1.png"
   },
   "developer": {
     "name": "Tushar",

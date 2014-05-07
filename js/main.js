@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$("#questionslevel3").hide();
 	$('#levels').hide();
 	$('#instructions').hide();
-	$('#highscore').hide();
+	$('[data-high="level"]').hide();
 	$("header").click(function()
 	{
 		homesweethome();
@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$("#questionslevel2").hide();
 		$("#questionslevel3").hide();
 		$("#instructions").hide();
+		$('[data-high="level"]').hide();
 		count=0;
 		countcheck=0;
 
@@ -33,14 +34,16 @@ $(document).ready(function(){
 
 		$('#instructions').show();
 	});
+	$('[data-title="highscore"]').click(function(){
+
+		$('[data-high="level"]').show();
+	});
 	$('#instructionclose').click(function(){
 
 		$('#instructions').slideUp();
 		homesweethome();
 	});
-
-
-
+	$("#high2").data("foo",0);
 });
 function homesweethome(){
 	$('#homepage').slideDown();
@@ -121,7 +124,7 @@ function level1click(type)
 		else{
 			countcheck++;
 		}
-		xx.innerHTML="Grand Central Terminal, Park Avenue, New York is the world's largest railway station";
+		xx.innerHTML="Grand Central Terminal, New York is the world's largest railway station";
 	}
 	else if(countcheck==1)
 	{
@@ -283,6 +286,14 @@ function level1click(type)
 
 	var score=document.getElementById("score1");
 	score.innerHTML=count;
+	var value = $("#high2").data("foo");
+	if(count>value){
+
+ // Store
+  localStorage.setItem("lastname", count);
+  // Retrieve
+  document.getElementById("high2").innerHTML=localStorage.getItem("lastname");
+	}
 	
 }
 //Function to be executed when Play again button is clicked

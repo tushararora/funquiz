@@ -18,10 +18,25 @@
 		<section data-title="instructions" class="tabs">Instructions</section>
 		<section data-title="highscore" class="tabs">High Score</section>
 		</div>
+
 		<div id="instructions">
-		<section id="instructiontext"><p><b>Quiz Mania</b> is a true/false quiz application.<br><strong>How to play?</strong><br>1. Select level<br>2. Based on your G.K. state the facts, whether they are true or false<br>3. For every "Correct" answer 2 points will be awarded<br>4. For every "Wrong" answer 1 point will be deducted<br>5. You can also skip the statement by using skip button<br></p></section>
+		<section id="instructiontext"><p style="font-size: 21px; text-align:center;"><b>Quiz Mania</b> is a true/false quiz application.<br></p><p><strong style="font-size: 18px;">How to play?</strong><br>1. Select level<br>2. Based on your G.K. state the facts, whether they are true or false<br>3. For every "Correct" answer 2 points will be awarded<br>4. For every "Wrong" answer 1 point will be deducted<br>5. You can also skip the statement by using skip button<br></p></section>
 		<section id="instructionclose">Close</section>
 		</div>
+
+		<div data-high="level" id="highscorelevel1">
+			<div id="high1" class="inblock1">Level 1</div>
+			<div id="high2" class="inblock1"></div>
+		</div>
+		<div data-high="level"id="highscorelevel2">
+			<div id="high3" class="inblock2">Level 2</div>
+			<div id="high4" class="inblock2"></div>
+		</div>
+		<div data-high="level" id="highscorelevel3">
+			<div id="high5" class="inblock3">Level 3</div>
+			<div id="high6" class="inblock3"></div>
+		</div>
+
 	    <div id="levels" class="selectpage">
 	    	<section  id="level1" class="levelpage" onclick="levelclick('level1')">
 	    		<div>Level 1</div>
@@ -40,7 +55,7 @@
 	    <div class='showlevel1' id="skip1"  onclick="level1click('skip')">Skip</div>
 	    <div class='showlevel1' data-score="scoreit" id="scorelevel1">Score</div>
 	    <div class='showlevel1' data-score="scoreit" id="score1">0</div>
-	    <div class='finalpage1' id='showscore1'></div>
+	    <div class='finalpage1' id='showscore1' style="font-size: 25px;"></div>
 	    <div class='finalpage1' id='playagain1' onclick="playagain1()">Play again</div>
 	    <div id='nextlevel1' onclick="levelclick('level2')">Go to Next Level</div>
 		</div>
