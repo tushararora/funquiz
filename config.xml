@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements. See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership. The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+DONT RENAME: DemoApp, DemoDesc , "com.inea.propertyApp" these are dynamically handled
+-->
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id = "com.funquiz.github"
+    versionCode="10"
+    version = "1.0.0">
+  <!-- versionCode is optional and Android only -->
+  <name>Quiz Mania</name>
+  <description>App to enhance your GK</description>
+  <author href="https://build.phonegap.com" email="support@phonegap.com">Tushar</author>
+  <!-- versionCode is optional and Android only -->
+  <!--
+access elements control the Android whitelist.
+Domains are assumed blocked unless set otherwise
+WE WOULD BE USING ALL ANDROID AND IOS ICONS AND SPLASH FOR BETTER APPEAL
+xlarge screens are at least 960dp x 720dp
+large screens are at least 640dp x 480dp
+normal screens are at least 470dp x 320dp
+small screens are at least 426dp x 320dp
+-->
+
+</widget>
