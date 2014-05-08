@@ -10,12 +10,12 @@ header{
 }
 #maintitle
 {
-	font-family:  cursive;
+	font-family: cursive,Arial;
 	color: #FFF;
 	padding-top: 18px;
 }
 .tabs{
-	font-family: cursive;
+	font-family: cursive,Arial;
 	height:40px;
 	font-size: 20px;
 	color: white;
@@ -58,7 +58,7 @@ section[data-title="highscore"]{
     margin: 0;
     font-size: 30px;
     color: #FFF;
-    font-family: cursive;
+    font-family: cursive, Arial;
     border-radius: 10px;
     margin-left: 10%;
 	width: 80%;
@@ -69,7 +69,7 @@ section[data-title="highscore"]{
 	text-align:center;
 	font-size: 20px;
 	color: #FFF;
-	font-family: cursive;
+	font-family: cursive, Arial;
 	margin-top: 10%;
 	opacity: .9;
 	
@@ -118,7 +118,7 @@ div [data-level="level1"]
 	color: #FFF;
 	height: 35px;
 	padding-top: 8px;
-	font-family: cursive;
+	font-family: cursive,Arial;
 	border-radius: 10px;
 	font-size: 18px;
 
@@ -141,14 +141,14 @@ div [data-level="level1"]
 	color: #FFF;
 	text-align: center;
 	padding-top: 8px;
-	font-family: cursive;
+	font-family: cursive,Arial;
 	border-radius: 10px;
 	font-size: 18px;
 }
 div [data-score="scoreit"]{
 	display: inline-block;
 	margin-top: 8%;
-	font-family: cursive;
+	font-family: cursive, Arial;
 	font-size: 20px;
 	height: 30px;
 	text-align: center;
@@ -177,7 +177,7 @@ div [data-score="scoreit"]{
 	text-align: center;
 	display: block;
 	margin-top: 18%;
-	font-family: cursive;
+	font-family: cursive, Arial;
 }
 #playagain1, #playagain2, #playagain3{
 	background-color:  #0168A5;
@@ -192,7 +192,7 @@ div [data-score="scoreit"]{
 	font-size: 20px;
 	text-align: center;
 	margin-top: 12%;
-	font-family: cursive;
+	font-family: cursive, Arial;
 	background-color: #D9183B;
 	margin-left: 14%;
 	width: 70%;
@@ -204,7 +204,7 @@ div [data-score="scoreit"]{
 	border-radius: 5px;
 	height: 80%;
 	color: white;
-	font-family: cursive;
+	font-family: cursive, Arial;
 	font-size: 16px;
 	background-color: #00933B;
 }
@@ -213,7 +213,7 @@ div [data-score="scoreit"]{
 	border-radius: 3px;
 	height: 35px;
 	color: white;
-	font-family: cursive;
+	font-family: cursive, Arial;
 	font-size: 16px;
 	background-color: #ED1638;
 	text-align: center;
@@ -226,32 +226,34 @@ div .inblock1{
 	display:inline-block;
 	color:white;
 	background: #00AAB5;
-	font-family: cursive;
+	font-family: cursive, Arial;
+	margin-top: 15%;
 }
 div .inblock2{
 	height: 30px;
 	display:inline-block;
 	color:white;
 	background:  #FF590D;
-	font-family: cursive;
+	font-family: cursive, Arial;
+	margin-top: 15%;
 }
 div .inblock3{
 	height: 30px;
 	display:inline-block;
 	color:white;
 	background:#A70101;
-	font-family: cursive;
+	font-family: cursive, Arial;
+	margin-top: 15%;
 }
 #high1, #high3, #high5{
 	width: 30%;
 	margin-left: 20%;
-	margin-top: 20%;
 	text-align: center;
 	padding-top: 10px;
 	border-radius: 10px;
 }
 #high2, #high4, #high6{
-	width: 10%;
+	width: 13%;
 	margin-left: 20%;
 	text-align: center;
 	padding-top: 10px;

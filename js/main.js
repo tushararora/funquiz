@@ -1,5 +1,8 @@
+
 var count=0;
-var countcheck=0; 
+var countcheck=0;  
+
+
 //jQuery to determine flow control
 $(document).ready(function(){
 	$('#correct').hide();
@@ -23,8 +26,6 @@ $(document).ready(function(){
 		countcheck=0;
 
 	});
-
-
 	$('#homepage section').click(function(){
 
 		$('[data-role="page"]').hide();
@@ -43,11 +44,26 @@ $(document).ready(function(){
 		$('#instructions').slideUp();
 		homesweethome();
 	});
-	$("#high2").data("foo",0);
+
+	// Retrieve
+	if(window.localStorage.getItem("highlevel1")==1)
+
+	{
+		document.getElementById("high2").innerHTML= window.localStorage.getItem("highlevel1")-1;}
+	
+
+	if(window.localStorage.getItem("highlevel2"))
+	{document.getElementById("high4").innerHTML= window.localStorage.getItem("highlevel2");}
+	if(window.localStorage.getItem("highlevel3"))
+	{document.getElementById("high6").innerHTML= window.localStorage.getItem("highlevel3");}
+
 });
 function homesweethome(){
 	$('#homepage').slideDown();
 }
+
+
+
 //Function to be executed when Play button is clicked
 function playclick(){
 	var x=document.getElementById("select");
@@ -55,6 +71,9 @@ function playclick(){
 	$('#select, #levels').slideDown();
 
 }
+
+
+
 //Function to redirect to the selected level
 function levelclick(type)
 {
@@ -107,6 +126,10 @@ function levelclick(type)
 	x1.innerHTML="0";
 	countcheck=0;
 }
+
+
+
+
 //Level 1 Quiz
 function level1click(type)
 {
@@ -282,20 +305,23 @@ function level1click(type)
 		{
 			$('#nextlevel1').show();
 		}
-	}
+		var ee1=document.getElementById('high2').innerHTML;
+		Number(ee1);
+		if(count > ee1){
 
+ 		// Store
+  			window.localStorage.setItem("highlevel1", count);
+  			document.getElementById("high2").innerHTML=count;
+  	}
+	}
 	var score=document.getElementById("score1");
 	score.innerHTML=count;
-	var value = $("#high2").data("foo");
-	if(count>value){
-
- // Store
-  localStorage.setItem("lastname", count);
-  // Retrieve
-  document.getElementById("high2").innerHTML=localStorage.getItem("lastname");
-	}
+	
 	
 }
+
+
+
 //Function to be executed when Play again button is clicked
 function playagain1()
 {
@@ -311,6 +337,9 @@ function playagain1()
 	count=0;
 }
 
+
+
+//Questions for level2
 function level2click(type)
 {
 	var xx=document.getElementById('statementlevel2');
@@ -545,11 +574,25 @@ function level2click(type)
 		{
 			$('#nextlevel2').show();
 		}
+		var ee2=document.getElementById('high4').innerHTML;
+		Number(ee2);
+		if(count > ee2){
+
+ 			// Store
+  			window.localStorage.setItem("highlevel2", count);
+  			document.getElementById("high4").innerHTML=count;
+  	}
 	}
 
 	var score=document.getElementById("score2");
 	score.innerHTML=count;
+	
+	
 }
+
+
+
+//To be executed when play again after completing level2 is clicked
 function playagain2()
 {
 	var xxx=document.getElementById('statementlevel2');
@@ -563,6 +606,11 @@ function playagain2()
 	$('#select').hide();
 	count=0;
 }
+
+
+
+
+//Questions for level 3
 function level3click(type)
 {
 	var xx=document.getElementById('statementlevel3');
@@ -853,11 +901,20 @@ function level3click(type)
 		x3.innerHTML="Your Score is "+count;
 		$('.showlevel3').hide();
 		$('.finalpage3').show();
+		var ee3=document.getElementById('high6').innerHTML;
+		parseInt(ee3);
+		if(count > ee3){
+
+ 			// Store
+  			window.localStorage.setItem("highlevel3", count);
+  			document.getElementById("high6").innerHTML=count;
+  	}
 	}
 
 	var score=document.getElementById("score3");
 	score.innerHTML=count;
 }
+//Function to be executed when playagain button is clicked after level3 is completed
 function playagain3()
 {
 	var xxx=document.getElementById('statementlevel3');
